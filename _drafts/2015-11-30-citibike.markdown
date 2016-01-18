@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Citibike"
+subtitle: "Availability forecasting"
+date: 2015-11-30
+author: "Dave Anderson"
+---
+
+# Libraries for modeling
+[Scikit learn][Scikit-docs]
+http://ipython-books.github.io/featured-04/
+
+[Linear regression with python (from scikit learn)](http://ipython-books.github.io/featured-04/)
+
+[Linear regression with python (from scratch)](http://aimotion.blogspot.com/2011/10/machine-learning-with-python-linear.html)
+
+
+# Latitude/Longitude binning
+Given that citibike stations are not fixed, that they can move and new stations can be added, it'll likely be more effective to bin latitude and longitude values for start/end of trips and the input of lat/long for the predictor.
+
+[Example - Hexbin w/ basemap](http://sensitivecities.com/so-youd-like-to-make-a-map-using-python-EN.html#.VlzZtx8SqkA)
+
+[Library - binify](https://github.com/kevinschaul/binify). Hel
+
+[scikit-docs]: http://scikit-learn.org/stable/documentation.html
