@@ -1,5 +1,6 @@
 # Site settings
 title: dvndrsn
+author: "Dave Anderson"
 header-img: img/home-bg.jpg
 email: dave@dvndrsn.com
 description: "Blog for recurse center"
@@ -7,7 +8,8 @@ baseurl: ""
 url: "http://dvndrsn.com"
 twitter_username: dvndrsn
 github_username:  dvndrsn
-facebook_username:  dvndnrsn
+facebook_username:  dvndrsn
+linkedin_username: dvndrsn
 
 # plugins
 gems: [jekyll-paginate]
