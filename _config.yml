@@ -12,7 +12,7 @@ facebook_username:  dvndrsn
 linkedin_username: dvndrsn
 
 # plugins
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 # Build settings
 markdown: kramdown
