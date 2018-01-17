@@ -1,8 +1,8 @@
 ---
 layout: post
-title:"Shapefiles"
-subtile:"and stuff"
-author: Dave Anderson
+title: "Shapefiles"
+subtile: "and stuff"
+author: "Dave Anderson"
 date: 2015-01-27
 ---
 Yesterday, I worked through [Mike Bostock][mike]'s D3 great [*Let's Make a Map* tutorial][lets map] with [Aliza][aliza] at [Recurse Center][recurse]. In Mike's tutorial, we take Shapefile data for the UK, filter and convert the data to GeoJSON then TopoJSON. We then load the TopoJSON file in D3, covert the data back to GeoJSON and render it as SVG in the browser, with some pretty styling and labels. It was very illustrative in how to work with map data in D3 (especially if you have a solid grasp of [D3 fundamentals][d3 fund]), but there were a few pieces of knowledge and references that can be a great aid when you're starting to step outside the bounds of the sandboxed example (besides a [great D3 tutorial][scott dataviz]).

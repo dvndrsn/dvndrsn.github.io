@@ -8,7 +8,7 @@ subtitle: "and/or Book Impressions"
 
 This week, I created [a visualization of passages and choices][vis] in [Ryan North's][ryno] excellent chooseable path adventure, [Romeo and/or Juliet][raoj]. With over 100+ endings, nearly 500 passages and close to 1000 choices, it was no mean feat to read let alone visualize the structure of the story in a informative way.
 
-[vis]: http://dvndrsn.com/projects/raoj-graph/
+[vis]: /projects/raoj-graph/
 [ryno]: https://twitter.com/ryanqnorth
 [raoj]: http://www.romeoandorjuliet.com/
 
@@ -20,7 +20,7 @@ In a series of posts, I'd like to share some of lessons learned and the technica
 2. *[Data Processing and/or Graph Theory.][dp]* Python script to load, transform and export graph data using the Networkx library to JSON nodes and edges.
 3. *[Data Visualization and/or Layout Experiments.][dv]* JavaScript, HTML and CSS to render JSON data using D3.JS force directed graph and SVG.
 
-[de]: {% post_url 2016-07-23-sheets-formulas %} 
+[de]: {% post_url 2016-07-23-sheets-formulas %}
 [dp]: {% post_url 2016-07-24-graph-theory %}
 [dv]: {% post_url 2016-07-28-data-vis %}
 

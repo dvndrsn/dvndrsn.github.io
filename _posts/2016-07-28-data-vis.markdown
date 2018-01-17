@@ -8,7 +8,7 @@ date:     2016-07-28
 
 I recently completed [a visualization of passages and choices][vis] in [Ryan North's][ryno] excellent chooseable path adventure, [Romeo and/or Juliet][raoj].
 
-[vis]: http://dvndrsn.com/projects/raoj-graph/
+[vis]: /projects/raoj-graph/
 [ryno]: https://twitter.com/ryanqnorth
 [raoj]: http://www.romeoandorjuliet.com/
 
@@ -17,7 +17,7 @@ I recently completed [a visualization of passages and choices][vis] in [Ryan Nor
 This is the final part of a series of posts about some of lessons learned and the technical details from how I put this together. Read the others about [book impressions][im], [data entry][de] and [data processing][dp] as well.
 
 [im]: {% post_url 2016-07-22-raoj-impressions %}
-[de]: {% post_url 2016-07-23-sheets-formulas %} 
+[de]: {% post_url 2016-07-23-sheets-formulas %}
 [dp]: {% post_url 2016-07-24-graph-theory %}
 [dv]: {% post_url 2016-07-28-data-vis %}
 
