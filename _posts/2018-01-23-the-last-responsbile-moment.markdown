@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "The Last Responsible Moment"
-subtitle: "You Ain't Gonna Need That, but More Legos Never Hurt"
+title: "You Ain't Gonna Need That, but More Legos Never Hurt"
+subtitle: "The Last Responsible Moment"
 author: "Dave Anderson"
 date: 2018-01-23
 ---
