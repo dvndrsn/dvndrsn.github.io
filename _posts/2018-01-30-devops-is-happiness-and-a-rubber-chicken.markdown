@@ -17,6 +17,7 @@ The awesome and talented human Brian Guthrie recently had [a great rant on twitt
 Brian made some great arguments for focusing more closely on processes and methods of collaboration that embody the philosophy behind DevOps rather than the role and tools themselves
 
 ![Swedish chef with chicken](https://media.giphy.com/media/mfXtM3EzEynS/giphy.gif)
+*Basic DevOps tooling at work.*
 
 Even [something as simple as a rubber chicken and a bell][rubber-chicken] can just as effective as full blown ops tooling such as Chef, Kubernetes and CircleCI. Some of my favorite parts of our conversation included:
 
@@ -37,4 +38,4 @@ You can listen to this episode using the fancy widget above, [read the transcrip
 
 [itunes-subscribe]: https://itunes.apple.com/us/podcast/the-rabbit-hole-an-inside-look-into-software-development/id1223811385
 [google-subscribe]: https://play.google.com/music/listen#/ps/Ivrri3o5umzfeop27vzjo3abgdy
-[podcasts-twitter]: https://twitter.com/radiofreerabbit
+[podcast-twitter]: https://twitter.com/radiofreerabbit

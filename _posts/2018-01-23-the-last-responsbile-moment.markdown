@@ -21,9 +21,10 @@ Not just a fancy term for procrastination, [_The Last Responsbile Moment_][horro
 
 This in itself is closely related to the concept of [YAGNI (You Ain't Gonna Need It)][martin-yagni], where a Minimum Viable Product or even Prototype (maybe even one that doesn't involve software at all, GASP) is the best course of action _right now_ to see what things are most important to work on.
 
-One such example that we chatted about on the episode  was, rather than spending a big chunk of time prototyping a website for tracking Pairs of Programmers working together with the capability matching random of pairs, a friend suggested that we could just use a bag filled with Legos of matching pairs of colors and shapes. That's a solution so much easier than using code, it almost seems silly that I even considered writing a new tool as the first step!
-
 ![pairs-of-lego-blocks]({{ site_url }}/img/lego-pairs.gif)
+*Prototyping the Minimum Viable Product should involve Lego more often.*
+
+One such example that we chatted about on the episode  was, rather than spending a big chunk of time prototyping a website for tracking Pairs of Programmers working together with the capability matching random of pairs, a friend suggested that we could just use a bag filled with Legos of matching pairs of colors and shapes. That's a solution so much easier than using code, it almost seems silly that I even considered writing a new tool as the first step!
 
 [martin-yagni]: https://martinfowler.com/bliki/Yagni.html
 
@@ -33,4 +34,4 @@ You can listen to this episode using the fancy widgit above, [read the transcrip
 
 [itunes-subscribe]: https://itunes.apple.com/us/podcast/the-rabbit-hole-an-inside-look-into-software-development/id1223811385
 [google-subscribe]: https://play.google.com/music/listen#/ps/Ivrri3o5umzfeop27vzjo3abgdy
-[podcasts-twitter]: https://twitter.com/radiofreerabbit
+[podcast-twitter]: https://twitter.com/radiofreerabbit
