@@ -1,9 +1,10 @@
 # Site settings
-title: dvndrsn
+title: Dave Anderson
+short_title: dvndrsn
 author: "Dave Anderson"
 header-img: img/home-bg.jpg
 email: dave@dvndrsn.com
-description: "Blog for recurse center"
+description: "Blogging about programming, music, data and the third dimension."
 baseurl: ""
 url: "http://dvndrsn.com"
 twitter_username: dvndrsn
