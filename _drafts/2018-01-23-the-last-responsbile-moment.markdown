@@ -1,9 +1,11 @@
 ---
-layout: post
-title: "You Ain't Gonna Need That, but More Legos Never Hurt"
+layout:   post
+title:    "You Ain't Gonna Need That, but More Legos Never Hurt"
 subtitle: "The Last Responsible Moment"
-author: "Dave Anderson"
-date: 2018-01-23
+author:   "Dave Anderson"
+date:     2018-01-23
+tags:     projects
+project:  "The Rabbit Hole Podcast"
 ---
 
 Often a theme that we joke about as we come up with ideas for episodes for [The Rabbit Hole podcast][podcast], we finally recorded an episode about [_The Last Responsible Moment_][episode-transcripts].

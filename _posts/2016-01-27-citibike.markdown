@@ -1,0 +1,74 @@
+---
+layout:   post
+title:    "Geometry, Topology and Bikes"
+subtile:  "Modern Cartography"
+author:   "Dave Anderson"
+date:     2015-01-27
+tags:     projects
+project:  "Citi Bike Trip History"
+---
+I worked through [Mike Bostock][mike]'s D3 great [*Let's Make a Map* tutorial][lets map] with [Aliza][aliza] at [Recurse Center][recurse] as a step on our project to try to render [a map of NYC][nyc-maps] for our [CitiBike data visualization][citibike].
+
+[aliza]: https://github.com/alizauf
+[mike]: https://bost.ocks.org/mike/algorithms/
+[lets map]:https://bost.ocks.org/mike/map/
+[nyc-maps]: https://github.com/dwillis/nyc-maps
+[citibike]: /projects/citibike/
+
+# Let's Make a Map!
+
+In Mike's tutorial, we take Shapefile data for the UK, filter and convert the data to GeoJSON then TopoJSON. We then load the TopoJSON file in D3, covert the data back to GeoJSON and render it as SVG in the browser using a [projection][projection], with some pretty styling and labels.
+
+[projection]: https://www.geo.hunter.cuny.edu/~jochen/gtech201/lectures/lec6concepts/map%20coordinate%20systems/how%20to%20choose%20a%20projection.htm
+[transition]: https://www.jasondavies.com/maps/transition/
+
+This was a very illustrative starting place for how to work with map data in D3 (especially if you have a solid grasp of [D3 fundamentals][d3 fund]). However there are a few pieces of knowledge and references that can be a great aid when you're starting to step outside the bounds of the sandboxed example.
+
+[recurse]: https://www.recurse.com/
+[d3 fund]: https://bost.ocks.org/mike/join/
+[scott dataviz]: https://chimera.labs.oreilly.com/books/1230000000345/index.html
+
+# Mapping Basics & Shapefiles
+
+[Mapschool.io][map school] provides a very readable overview of mapping basics, starting from the very beginning. This includes some great information about the structure of the Shapefile, one of the most common formats which you can find open map data in. The Shapefile format is actually a group of files which act together, but with very different contents.
+
+* .shp
+* .prj
+* .shx
+* .dbf
+* .prj
+
+[map school]: https://mapschool.io/
+
+During [the Let's Make a Map! tutorial][lets map], we filter data from our shapefile using a GIS command line tool `ogr2ogr` by applying filters to the database associated with the shapefile. Filters use straightforward SQL-like WHERE-clause syntax, but when you are preparing your own data, you will need to review the data in the shapefile to determine how best to filter it.
+
+A useful program for to review shapefiles is QGIS, an open source GIS tool. You can open the file in QGIS browser easily to preview the structure and data attributes. You can also open the file in QGIS desktop and open the attribute table from the desktop.
+
+# GeoJSON and TopoJSON - Geometry vs. Topology
+
+[This site][geojson] is a great reference for understanding the GeoJSON structure. For a deeper understanding of the file format, you can play with Tools such as [GeoJSON.io][geojson play] to create and view the text contents for new GeoJSON from arbitary shapes on top of a map or [mapshaper.org][mapshaper] to load an existing Shapefile, GeoJSON or TopoJSON to get a feel for how their contents are structured visually.
+
+[geojson]: https://www.macwright.org/2015/03/23/geojson-second-bite.html
+[geojson play]: https://geojson.io/
+[mapshaper]: https://www.mapshaper.org/
+
+It is initially counter-intuitive to consider that we are converting our map data from Shapefile format to GeoJSON then TopoJSON, only to finally covert the data back to GeoJSON on the client side to display, but there's good reason for each format. For example, TopoJSON is a more space-efficient format which is especially beneficial for the transferring large amounts of mapping data on web.
+
+Understanding [the difference between Geometry and Topology][topo] can really help drive home what the fundamenetal differences between GeoJSON and TopoJSON.
+
+[topo]: https://www.esri.com/news/arcuser/0401/topo.html
+
+In formats such as Shapefile and GeoJSON, the edges of the object is stored using Geometry. These file formats will store all edges separately for each shape even if there are multiple overlapping edges of shapes (say for neighboring states or countries).
+
+In [TopoJSON][topojson], there are two primary tricks used to reduce the size of the file format. First, the edges of an object are stored as topology. This means that each object is stored as a reference to its edges (called arcs in TopoJSON) allowing redundant shared arcs (between ajacent states or countries) to be reused between objects. Second, the precision of the numbers used to define the arcs and points are compressed using [delta encoding][delta] (represented as [integers rather than floats][delta short]). Also, the same data can be used to represent a border (mesh) or solid object.
+
+[topojson]: https://github.com/mbostock/topojson/wiki
+[delta short]: https://www.dspguide.com/ch27/4.htm
+[delta]: https://preshing.com/20121105/arithmetic-encoding-using-fixed-point-math/
+
+# More Resources
+
+When it comes to working with this data, there are so many tools and options. It helps to have a few guideposts for [what kind of tools are best suited for the geometry and associated data attributes that you're trying to present][map cheatsheet] and [what kind of principles and practices to lean into and mistakes to avoid][create maps]. It's a deep, complex topic, but extermely satisfying to create digital representations of the physical space and data around us.
+
+[map cheatsheet]: https://github.com/tmcw/mapmakers-cheatsheet
+[create maps]: https://github.com/veltman/maps-nicar14

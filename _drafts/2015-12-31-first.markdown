@@ -10,30 +10,35 @@ Whoa yeah, blogging. How very 2000's!
 
 I hadn't much considered writing a blog - technical or otherwise - until it was suggested by some colleagues at [Recurse Center][rc]. Going through [some][rc1] of their [awesome work][rc2] really [inspired me][rc3] and [reminded me][rc4] that I love blogs and that feeling that comes burning through a pile of articles in a finely curated [RSS feed reader][feedly]. I'm reminded specifically that I love blogs that:
 
-* are informative [technically][tech] or [otherwise][non-tech].
-* provide you with a [new perspective or appreciation][perspective] for the world around you.
-* [amuse][haha], [entertain][entertainment] or fill you with [a sense of wonder][wonder].
-* connect you with the [cultural movements][cultural], [trends][trend] or other [happenings][haps] in the internet or [places around you][places].
-
-Hopefully this pile of words will do something along those lines while also helping to cement the knowledge that I'm working to gather and give back to the broader community.
-
-If you have any thoughts or suggestions, don't hesitate at all to [contact me on email][contact-form], [twitter][twitter-url], or any of the various social media buttons below. Check back soon for some more content!
-
 [rc]: http://www.recursecenter.com/
 [rc1]: http://jvns.ca/
 [rc2]: http://rose.github.io/
 [rc3]: https://rileyjshaw.recurse.com/
 [rc4]: https://lpm.recurse.com/blog/
 [feedly]: http://www.feedly.com/
+
+* are informative [technically][tech] or [otherwise][non-tech].
+* provide you with a [new perspective or appreciation][perspective] for the world around you.
+* [amuse][haha], [entertain][entertainment] or fill you with [a sense of wonder][wonder].
+* connect you with the [cultural movements][cultural], [trends][trend] or other [happenings][haps] in the internet or [places around you][places].
+
 [tech]: http://www.r2d3.us/visual-intro-to-machine-learning-part-1/
 [non-tech]: http://qz.com/582720/americas-most-prolific-wall-punchers-charted/
+
 [perspective]: http://ncase.me/simulating/
+
 [haha]: http://xkcd.com/1626/
 [entertainment]: http://kottke.org/16/01/filling-plot-holes-in-the-force-awakens
 [wonder]: http://apod.nasa.gov/apod/ap160117.html
+
 [cultural]: http://www.harkavagrant.com/index.php?id=394
 [places]: http://www.scoutingny.com/a-1920s-hotel-lobby-hidden-in-an-upper-west-side-apartment-building/
 [trend]: http://stereotropes.bocoup.com/
 [haps]: http://www.brooklynvegan.com/archives/2016/01/land_of_talk_an_1.html
+
+Hopefully this pile of words will do something along those lines while also helping to cement the knowledge that I'm working to gather and give back to the broader community.
+
+If you have any thoughts or suggestions, don't hesitate at all to [contact me on email][contact-form], [twitter][twitter-url], or any of the various social media buttons below. Check back soon for some more content!
+
 [contact-form]: /contact.html
 [twitter-url]: http://www.twitter.com/dvndrsn/

@@ -4,13 +4,15 @@ title:    "Romeo and/or Juliet and/or Graph Theory"
 subtitle: "and/or Data Processing"
 author:   "Dave Anderson"
 date:     2016-07-22
+tags:     projects
+project:  "Romeo and/or Juliet and/or Graph Theory"
 ---
 
 I recently completed [a visualization of passages and choices][vis] in [Ryan North's][ryno] excellent chooseable path adventure, [Romeo and/or Juliet][raoj].
 
 [vis]: /projects/raoj-graph/
 [ryno]: https://twitter.com/ryanqnorth
-[raoj]: http://www.romeoandorjuliet.com/
+[raoj]: https://www.romeoandorjuliet.com/
 
 [![Romeo and/or Juliet visualization]({{ site_url }}/img/raoj-graph.png)][vis]
 
@@ -70,8 +72,8 @@ json.dump(d, open(json_file, 'w'))
 The Networkx library also makes it very easy to calculate classic [graph algorithms][nx-algo] against your data set and add the results as parameters to the node or edge. I played with using the class [unweighted shortest path algorithm][sp] and [Dijrska's algorithm][dijrska] for weighted shortest path.
 
 [nx-algo]: https://networkx.github.io/documentation/networkx-1.9.1/reference/algorithms.html
-[sp]: http://visualgo.net/sssp
-[dijrska]: http://visualgo.net/sssp
+[sp]: https://visualgo.net/sssp
+[dijrska]: https://visualgo.net/sssp
 
 ## Path of least decisions ##
 

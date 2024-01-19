@@ -1,16 +1,18 @@
 ---
 layout:   post
 title:    "Romeo and/or Juliet and/or Data Entry"
+subtitle: "and/or Sheets Formulas"
 date:     2016-07-22
 author:   "Dave Anderson"
-subtitle: "and/or Sheets Formulas"
+tags:     projects
+project:  "Romeo and/or Juliet and/or Graph Theory"
 ---
 
 I recently completed [a visualization of passages and choices][vis] in [Ryan North's][ryno] excellent chooseable path adventure, [Romeo and/or Juliet][raoj].
 
-[vis]: http://dvndrsn.com/projects/raoj-graph/
+[vis]: /projects/raoj-graph/
 [ryno]: https://twitter.com/ryanqnorth
-[raoj]: http://www.romeoandorjuliet.com/
+[raoj]: https://www.romeoandorjuliet.com/
 
 [![Romeo and/or Juliet visualization]({{ site_url }}/img/raoj-graph.png)][vis]
 

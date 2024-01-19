@@ -28,7 +28,7 @@ Even [something as simple as a rubber chicken and a bell][rubber-chicken] can ju
 - Avoid tension between incentives given to people in operations (keep the environment stable) vs developers (ship new features) through collaboration.
 - Drive with process, tooling and collaboration towards continuous integration of code and continuous delivery of those features to production.
 
-[rubber-chicken]: http://www.jamesshore.com/Blog/Continuous-Integration-on-a-Dollar-a-Day.html
+[rubber-chicken]: https://www.jamesshore.com/Blog/Continuous-Integration-on-a-Dollar-a-Day.html
 
 I've had the pleasure of working on cross functional teams with some folks who have truly embodied this philosophy. At the end of the day, it feels more fulfilling and empowering when working closely together with people who have both operations and development skills. As a team, we're able to bring features to users more quickly and automate away the pain and boring stuff associated with day to day development tasks.
 

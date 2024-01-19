@@ -102,7 +102,6 @@ Markdown vs kramdown
 [Kramedown Cheatsheet](http://ricostacruz.com/cheatsheets/kramdown.html)
 [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
-
 # TODO
 Take some the fixed top scroll from here.
 [MADness](http://madforjekyll.github.io/)

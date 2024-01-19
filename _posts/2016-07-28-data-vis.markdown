@@ -4,13 +4,15 @@ title:    "Romeo and/or Juliet and/or Data Visualization"
 subtitle: "and/or Layout Experiments"
 author:   "Dave Anderson"
 date:     2016-07-28
+tags:     projects
+project:  "Romeo and/or Juliet and/or Graph Theory"
 ---
 
 I recently completed [a visualization of passages and choices][vis] in [Ryan North's][ryno] excellent chooseable path adventure, [Romeo and/or Juliet][raoj].
 
 [vis]: /projects/raoj-graph/
 [ryno]: https://twitter.com/ryanqnorth
-[raoj]: http://www.romeoandorjuliet.com/
+[raoj]: https://www.romeoandorjuliet.com/
 
 [![Romeo and/or Juliet visualization]({{ site_url }}/img/raoj-graph.png)][vis]
 

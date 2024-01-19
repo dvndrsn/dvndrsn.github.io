@@ -1,16 +1,18 @@
 ---
 layout:   post
 title:    "Romeo and/or Juliet and/or Datavis"
+subtitle: "and/or Book Impressions"
 date:     2016-07-22
 author:   "Dave Anderson"
-subtitle: "and/or Book Impressions"
+tags:     projects
+project:  "Romeo and/or Juliet and/or Graph Theory"
 ---
 
 This week, I created [a visualization of passages and choices][vis] in [Ryan North's][ryno] excellent chooseable path adventure, [Romeo and/or Juliet][raoj]. With over 100+ endings, nearly 500 passages and close to 1000 choices, it was no mean feat to read let alone visualize the structure of the story in a informative way.
 
 [vis]: /projects/raoj-graph/
 [ryno]: https://twitter.com/ryanqnorth
-[raoj]: http://www.romeoandorjuliet.com/
+[raoj]: https://www.romeoandorjuliet.com/
 
 [![Romeo and/or Juliet visualization]({{ site_url }}/img/raoj-graph.png)][vis]
 

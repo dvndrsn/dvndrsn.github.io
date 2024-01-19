@@ -41,4 +41,4 @@ xdotool getmouselocation --shell
 
 `byzanz-record -x $X -y $Y --width= --height= --cursor --verbose`
 
-http://stackoverflow.com/questions/8480073/how-would-i-get-the-current-mouse-coordinates-in-bash
+https://stackoverflow.com/questions/8480073/how-would-i-get-the-current-mouse-coordinates-in-bash

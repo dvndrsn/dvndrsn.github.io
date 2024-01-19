@@ -4,6 +4,8 @@ title:    "Programming Resolutions and How To Keep Them"
 subtitle: "While Being Smart About It"
 author:   "Dave Anderson"
 date:     2018-01-16
+tags:     projects
+project:  "The Rabbit Hole Podcast"
 ---
 
 This week, William, Mike and I talked about [*Programming Resolutions and How to Keep Them*][episode-transcripts] on our 45th (!!!) episode of the [Rabbit Hole podcast][podcast].
@@ -32,7 +34,7 @@ For me, specifically, I'd like to contribute to open source projects, more speci
 
 There are some [differing opinions][share-your-goals] about when (or if!) you should share goals with others, but hopefully getting these out there in internet land will be a positive reinforcement to get us off our butts. I've got a couple of other resolutions that I'll keep in my back pocket as a control, to see if my goals that I've made public or those that remain private make the most progress after a couple of weeks.
 
-[share-your-goals]: http://www.psychology24.org/should-you-tell-people-about-your-goals/
+[share-your-goals]: https://www.psychology24.org/should-you-tell-people-about-your-goals/
 
 Do you have any programming (or non-programming) related resolutions or SMART goals for the new year? I'd be curious to hear them!
 
