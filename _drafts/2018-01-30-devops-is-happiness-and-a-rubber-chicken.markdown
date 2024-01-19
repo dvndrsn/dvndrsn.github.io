@@ -1,9 +1,11 @@
 ---
-layout: "post"
-title: "DevOps happiness is a Rubber Chicken"
+layout:   "post"
+title:    "DevOps happiness is a Rubber Chicken"
 subtitle: "The Real Meaning of DevOps"
-author: "Dave Anderson"
-date: "2018-01-30 17:03"
+author:   "Dave Anderson"
+date:     "2018-01-30 17:03"
+tags:     projects
+project:  "The Rabbit Hole Podcast"
 ---
 
 The awesome and talented human Brian Guthrie recently had [a great rant on twitter][brian-devops-rant] about The Real Meaning of DevOps. It was wonderful to have a [discussion with him about it][episode-transcripts] on the [podcast][podcast].

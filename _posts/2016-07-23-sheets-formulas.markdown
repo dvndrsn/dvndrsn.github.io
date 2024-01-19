@@ -2,8 +2,8 @@
 layout:   post
 title:    "Romeo and/or Juliet and/or Data Entry"
 subtitle: "and/or Sheets Formulas"
-date:     2016-07-22
 author:   "Dave Anderson"
+date:     2016-07-22
 tags:     projects
 project:  "Romeo and/or Juliet and/or Graph Theory"
 ---
