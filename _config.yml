@@ -27,6 +27,7 @@ exclude:
   - "package.json"
   - "README.md"
   - "tmp/"
+  - "vendor/"
 
 # FTP Settings for Gylnn
 ftp_host: "ftp.modernairs.com"
