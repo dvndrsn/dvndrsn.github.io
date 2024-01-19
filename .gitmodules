@@ -1,3 +1,6 @@
-[submodule "projects/raoj-graph"]
+[submodule "raoj"]
 	path = projects/raoj-graph
 	url = https://github.com/dvndrsn/romeo-and-or-juliet-vis
+[submodule "projects/citibike"]
+	path = projects/citibike
+	url = https://github.com/dvndrsn/citibike.git
