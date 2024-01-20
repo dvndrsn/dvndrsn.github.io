@@ -7,7 +7,7 @@ date:     2015-01-27
 tags:     projects
 project:  "Citi Bike Trip History"
 ---
-I worked through [Mike Bostock][mike]'s D3 great [*Let's Make a Map* tutorial][lets map] with [Aliza][aliza] at [Recurse Center][recurse] as a step on our project to try to render [a map of NYC][nyc-maps] for our [CitiBike data visualization][citibike].
+I worked through [Mike Bostock][mike]'s great [*Let's Make a Map* D3 tutorial][lets map] with [Aliza][aliza] at [Recurse Center][recurse] as a step on our project to try to render [a map of NYC][nyc-maps] for our [CitiBike data visualization][citibike].
 
 [aliza]: https://github.com/alizauf
 [mike]: https://bost.ocks.org/mike/algorithms/

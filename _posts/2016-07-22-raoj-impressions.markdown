@@ -1,7 +1,7 @@
 ---
 layout:   post
 title:    "Romeo and/or Juliet"
-subtitle: "and/or Book Impressions"
+subtitle: "and/or Story Path Analysis"
 author:   "Dave Anderson"
 date:     2016-07-22
 tags:     projects
