@@ -90,6 +90,23 @@ More secure, better performance than CMS. Strong separation of content and prese
 
 Hacker friendly [static site generator](https://www.staticgen.com/) for hosting on Github.io (or for self-hosting) [Why static site generators](http://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/)
 
+## Liquid Tags and Filters
+
+Jekyll provides [custom template-related tags][jekyll-tags] that can be leveraged in liquid for `highlight` `link` `post_url`. These are in addtion to the standard set of [liquid template tags][liquid-tags] for control flow, iteration, templating, and varables. Liquid also has filters for modifiying templated values.
+
+[jekyll-tags]: https://jekyllrb.com/docs/liquid/tags/
+[liquid-tags]: https://shopify.github.io/liquid/tags/control-flow/
+
+## Styling
+
+Jekyll supports [an out-of-the-box pipeline for sass][jekyll-sass]. [Less can be automatically converted to sass][less-to-sass].
+
+[jekyll-sass]: https://jekyllrb.com/docs/assets/
+[less-to-sass]: https://www.npmjs.com/package/less2sass
+
+This template uses bootstrap 3, but [bootstrap 5 can be included as saas][jekyll-bootstrap-5].
+
+[jekyll-bootstrap-5]: https://colingallagher.me/2022/01/22/jekyll-bootstrap-5/
 
 . Do initial setup.
     * [Pre-requisite requirements](http://jekyllrb.com/docs/installation/). Easy to tool such as [RVM](https://rvm.io/rvm/install).
@@ -107,6 +124,12 @@ Take some the fixed top scroll from here.
 [MADness](http://madforjekyll.github.io/)
 [Personal](https://github.com/PanosSakkos/personal-jekyll-theme)
 Finagle with [CSS syntax](http://www.w3schools.com/css/css_syntax.asp)
+
+# Diagrams
+
+There is a jekyll plugin to [include mermaid diagrams][jekyll-mermaid].
+
+[jekyll-mermaid]: https://github.com/jasonbellamy/jekyll-mermaid
 
 # Kramdown
 
@@ -188,6 +211,10 @@ __bold__ and **also bold**
 
 ## Links
 
+Here's a helpful deep-dive into [how Jekyll handles links][jekyll-links].
+
+[jekyll-links]: https://mademistakes.com/mastering-jekyll/how-to-link/
+
 [I'm an inline-style link](https://www.google.com)
 
 [I'm an inline-style link with title](https://www.google.com "Google's Homepage")
@@ -197,6 +224,10 @@ __bold__ and **also bold**
 [I'm a relative reference to a repository file](../blob/master/LICENSE)
 
 [You can use numbers for reference-style link definitions][1]
+
+[1]: https://example.com
+
+[I'm a link that opens in a new tab][1]{:target="_blank"}
 
 Or leave it empty and use the [link text itself].
 
