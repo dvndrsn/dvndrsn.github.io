@@ -15,6 +15,10 @@ I worked through [Mike Bostock][mike]'s D3 great [*Let's Make a Map* tutorial][l
 [nyc-maps]: https://github.com/dwillis/nyc-maps
 [citibike]: /projects/citibike/
 
+![visalization of citibike trips]({{ site_url }}/img/citibike.png)
+
+<!--more-->
+
 # Let's Make a Map!
 
 In Mike's tutorial, we take Shapefile data for the UK, filter and convert the data to GeoJSON then TopoJSON. We then load the TopoJSON file in D3, covert the data back to GeoJSON and render it as SVG in the browser using a [projection][projection], with some pretty styling and labels.

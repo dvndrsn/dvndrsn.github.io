@@ -1,36 +1,57 @@
 ---
 layout: page
 ---
+<section>
+    <h1>Hey there! My name is Dave.</h1>
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-          {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-          {{ post.subtitle }}
-        </h3>
+    <p>I am a polyglot full-stack software developer, across programming languages, technical layers, and the
+        organizational
+        stack. I co-founded a long-running <a href="https://www.radiofreerabbit.com/" target="_blank">weekly software
+            engineering
+            podcast</a> called the Rabbit Hole about learning and growing as a software developer out in the open. You
+        can read more <a href={% link about.markdown %}>about my other focuses and interests</a> if you're curious.</p>
+
+    <p>Here I've shared some writings about my past projects and interests. Feel free to <a
+            href="{% link contact.html %}">reach out and say
+            hi</a>!
+        <a href="https://www.radiofreerabbit.com/" target="_blank"><img style="display: inline"
+                alt="rabbit hiding in a hole" src="{{ site_url }}/img/RabbitHole.webp" width="32" height="32" /></a>
+    </p>
+</section>
+<section>
+    <h1>Articles</h1>
+    {% for post in paginator.posts %}
+    <div class="post-preview">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            <h3 class="post-title">
+                {{ post.title }}
+            </h3>
+            {% if post.subtitle %}
+            <h4 class="post-subtitle">
+                {{ post.subtitle }}
+            </h4>
+            {% endif %}
+        </a>
+        <p class="post-meta">{{post.excerpt}}</p>
+        <p>Click here for the <a href="{{ post.url | prepend: site.baseurl }}">full post.</a></p>
+    </div>
+    <hr>
+    {% endfor %}
+
+    <!-- Pager -->
+    {% if paginator.total_pages > 1 %}
+    <ul class="pager">
+        {% if paginator.previous_page %}
+        <li class="previous">
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer
+                Posts</a>
+        </li>
         {% endif %}
-    </a>
-    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
-</div>
-<hr>
-{% endfor %}
-
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
+        {% if paginator.next_page %}
+        <li class="next">
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+        </li>
+        {% endif %}
+    </ul>
     {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+</section>

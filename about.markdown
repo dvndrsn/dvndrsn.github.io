@@ -1,26 +1,35 @@
 ---
 layout: page
 title: "About"
-description: ""
 ---
-Polyglot full-stack software developer, striving to leave things better than they were using the best of engineering practices with agile and XP methodologies, across the stack from front to back and from team to org.
+# Hey there!
 
-Currently at [Stride][stride], as a Software development consultant, I embed with existing teams in NYC and help them be better than we found them through application of non-dogmatic agile and technology best practices.
+My name is Dave.
+
+I am a polyglot full-stack software developer, across programming languages, technical layers, and the organizational stack. I've had over 17 years of experience at more than a dozen companies, large and small. I've worked on on many projects using langagues including Python, TypeScript, Ruby, Golang and Java and have adopted roles including manager, technical expert, team lead, and stakeholder manager as needed by the project.
+
+I am a currently a Developer Consultant at [Stride][stride]{:target="_blank"}, where we embed on teams and strive to leave things better than we found them using the best of engineering practices paired with agile and XP methodologies. I'm also an avid technical communicator. I co-founded and co-hosted a long-running [weekly software engineering podcast][rabbit-hole-podcast]{:target="_blank"} with more than 200 episodes and have spoken at several conferences about Python, GraphQL and API Design.
 
 [stride]: https://stride.build
-
-I'm a polygot at heart, but my current technical specialties include JavaScript (React, Redux, Apollo) and Python (Django, Graphine) with a special interest in developing Graphql API technologies. In the past, I've also spent time with Ruby and Java as well.
-
-I'm also an avid technical communicator, a co host of a [weekly software engineering podcast][rabbit-hole-podcast], and am always looking for more opportunities to write and speak about emerging technology.
-
 [rabbit-hole-podcast]: https://www.radiofreerabbit.com/
 
-I completed a session at [Recurse Center][recurse-center] Retreat as part of their Winter 1 Batch. At Recurse, I focused on learning more about full-stack development and tools for data analysis.
+Before my time at Stride, I spent some time at the [Recurse Center][recurse-center]{:target="_blank"} retreat as part of their Winter 2015/2016 Batch. At Recurse, I spent time in self-directed study of Python, machine learning, data analysis & visualization and collaborated with folks studying React, GraphQL, and cyptocurrencies.
 
 [recurse-center]: https://www.recursecenter.com/
 
-Prior to Recurse, by day, I was a consultant and onsite team leader for a team of offshore developers. By night, was (and still am) a [bassist][modern-airs], traveler and dreamer.
+Prior to Recurse, by day, I was a consultant leading a distributed team of full stack developers and managing a portfolio of validated healthcare and financial applications. By night, was (and still am) a [musician][modern-airs]{:target="_blank"}, traveler.
 
 [modern-airs]: https://modernairs.com
 
-You can find <a href="pdf/DaveAnderson-Resume.pdf">my resume</a> here if you're curious to see more about me. Feel free to reach out at the social links at the bottom of the page, too!
+Futher back, I studied Engineering at Rutgers University and grew up in Central Jersey, home of [Skate and Surf festival][catch-22]{:target="_blank"}, [fat sandwiches][fat-sandwich]{:target="_blank"} and [failed traffic experiments][jughandle]{:target="_blank"}.
+
+[catch-22]: https://www.wikiwand.com/en/Catch_22_(band)
+[fat-sandwich]: https://www.wikiwand.com/en/Fat_Sandwich
+[jughandle]: https://www.wikiwand.com/en/Jughandle
+
+You can find [my resume][resume]{:target="_blank"} here if you're curious to see more about me.
+
+Feel free to reach out at the social links at the bottom of the page, too!
+
+[resume]: pdf/DaveAnderson-Resume.pdf
+

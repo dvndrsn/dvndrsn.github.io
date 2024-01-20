@@ -1,22 +1,24 @@
 ---
 layout:   post
-title:    "Romeo and/or Juliet and/or Graph Theory"
-subtitle: "and/or Data Processing"
+title:    "Romeo and/or Juliet"
+subtitle: "and/or Graph Theory"
 author:   "Dave Anderson"
 date:     2016-07-22
 tags:     projects
 project:  "Romeo and/or Juliet and/or Graph Theory"
 ---
 
-I recently completed [a visualization of passages and choices][vis] in [Ryan North's][ryno] excellent chooseable path adventure, [Romeo and/or Juliet][raoj].
+I created [a visualization of passages and choices][vis] in [Ryan North's][ryno] excellent chooseable path adventure, [Romeo and/or Juliet][raoj]. This is the third part of a series of posts about some of lessons learned and the technical details from how I put this together. This writup focuses on processing the directed graph using Netowrkx in Python to create features to help better visualize the data. 
 
 [vis]: /projects/raoj-graph/
 [ryno]: https://twitter.com/ryanqnorth
 [raoj]: https://www.romeoandorjuliet.com/
 
-[![Romeo and/or Juliet visualization]({{ site_url }}/img/raoj-graph.png)][vis]
+[![No return picture]({{ site_url }}/img/raoj-no_return.png)][vis]
 
-This is the second part of a series of posts about some of lessons learned and the technical details from how I put this together. Read the others about [book impressions][im], [data entry][de] and [data visualization][dv] as well.
+<!--more-->
+
+Read the others about [book impressions][im], [data entry][de], and [data visualization][dv] as well.
 
 [im]: {% post_url 2016-07-22-raoj-impressions %}
 [de]: {% post_url 2016-07-23-sheets-formulas %}
@@ -108,7 +110,7 @@ except:
     weight = 1
 ```
 
-Adding the shortest weighted path is basically the same as the previous ccode but we are using Dijkstra's algorithm instead the unweighted shortest path.
+Adding the shortest weighted path is basically the same as the previous code but we are using Dijkstra's algorithm instead the unweighted shortest path.
 
 ```
   spl = nx.dijkstra_path(self.G, start, end)

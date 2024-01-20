@@ -1,14 +1,14 @@
 ---
 layout:   post
-title:    "Romeo and/or Juliet and/or Data Visualization"
-subtitle: "and/or Layout Experiments"
+title:    "Romeo and/or Juliet"
+subtitle: "and/or Data Visualization"
 author:   "Dave Anderson"
 date:     2016-07-28
 tags:     projects
 project:  "Romeo and/or Juliet and/or Graph Theory"
 ---
 
-I recently completed [a visualization of passages and choices][vis] in [Ryan North's][ryno] excellent chooseable path adventure, [Romeo and/or Juliet][raoj].
+This is the final part of a series of posts about some of lessons learned and the technical details from how I put together [a visualization of passages and choices][vis] in [Ryan North's][ryno] excellent chooseable path adventure, [Romeo and/or Juliet][raoj]. In this writeup, I share some of the code and experiements responsible for the layout and final visualization design.
 
 [vis]: /projects/raoj-graph/
 [ryno]: https://twitter.com/ryanqnorth
@@ -16,7 +16,9 @@ I recently completed [a visualization of passages and choices][vis] in [Ryan Nor
 
 [![Romeo and/or Juliet visualization]({{ site_url }}/img/raoj-graph.png)][vis]
 
-This is the final part of a series of posts about some of lessons learned and the technical details from how I put this together. Read the others about [book impressions][im], [data entry][de] and [data processing][dp] as well.
+<!--more-->
+
+Read the prior posts about [book impressions][im], [data entry][de] and [data processing][dp] as well.
 
 [im]: {% post_url 2016-07-22-raoj-impressions %}
 [de]: {% post_url 2016-07-23-sheets-formulas %}
@@ -93,7 +95,7 @@ Once the force layout is configured, the data will be displayed as a tangled blo
 
 ![Tangled layout]({{ site_url }}/img/raoj-tangled.png)
 
-To try to make the structure of the narrative more clear, I decided to organize the graph nodes based on the order of passages visited while following the bard path (choices that follow Shakespeare's original version of the Romeo and Juliet story). I traversed the bard path using depth first search during pre-processing in Python and calculated a fixed layout for the bard path nodes. Nodes with fixed layout will not be subject to simulation forces. In order to add more flexibility to the layout, I only marked every 3 nodes as a fixed.
+To try to make the structure of the narrative more clear, I decided to organize the graph nodes based on the order of passages visited while following the bard path. The bard path consists of red-highlighted choices that follow Shakespeare's original version of the Romeo and Juliet story. I traversed the bard path using depth first search during pre-processing in Python and calculated a fixed layout for the bard path nodes. Nodes with fixed layout will not be subject to simulation forces. In order to add more flexibility to the layout, I only marked every 3 nodes as a fixed.
 
 ```
 def add_bard_layout(self, layout, fixed_node=3, start='Cover',

@@ -1,16 +1,17 @@
 # Site settings
-title: Dave Anderson
+title: Out of depth
 short_title: dvndrsn
 author: "Dave Anderson"
 header-img: img/home-bg.jpg
 email: dave@dvndrsn.com
-description: "Blogging about programming, music, data and the third dimension."
+description: "Programming in the third dimension."
 baseurl: ""
 url: "https://dvndrsn.com"
 twitter_username: dvndrsn
 github_username: dvndrsn
 facebook_username: dvndrsn
 linkedin_username: dvndrsn
+excerpt_separator: <!--more-->
 
 # plugins
 plugins: [jekyll-paginate]

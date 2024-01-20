@@ -1,22 +1,24 @@
 ---
 layout:   post
-title:    "Romeo and/or Juliet and/or Data Entry"
-subtitle: "and/or Sheets Formulas"
+title:    "Romeo and/or Juliet"
+subtitle: "and/or Data Entry"
 author:   "Dave Anderson"
 date:     2016-07-22
 tags:     projects
 project:  "Romeo and/or Juliet and/or Graph Theory"
 ---
 
-I recently completed [a visualization of passages and choices][vis] in [Ryan North's][ryno] excellent chooseable path adventure, [Romeo and/or Juliet][raoj].
+This is the second part of a series of psots about some of the technical details about how I put together [a visualization of passages and choices][vis] in [Ryan North][ryno]'s excellent choosable path adventure, [Romeo and/or Juliet][roaj]. Here, we talk about designing the schema for the directed graph, gathering data, and some Sheets formulas use to help automate some mundane tasks.
 
 [vis]: /projects/raoj-graph/
 [ryno]: https://twitter.com/ryanqnorth
 [raoj]: https://www.romeoandorjuliet.com/
 
-[![Romeo and/or Juliet visualization]({{ site_url }}/img/raoj-graph.png)][vis]
+[![Easy mode picture]({{ site_url }}/img/raoj-easy_mode.png)][vis]
 
-This is the first part of a series of posts about some of lessons learned and the technical details from how I put this together. Read the others about [book impressions][im], [data processing][dp] and [data visualization][dv] as well.
+<!--more-->
+
+Read the others about [book impressions][im], [data processing][dp] and [data visualization][dv] as well.
 
 [im]: {% post_url 2016-07-22-raoj-impressions %}
 [de]: {% post_url 2016-07-23-sheets-formulas %} 
@@ -28,6 +30,8 @@ This is the first part of a series of posts about some of lessons learned and th
 Data entry is a pretty straightforward task, once you've decided upon a how you're planning to model the data and what tools to leverage.
 
 Because the choices for each passage in R&\|J are one-way and can refer back to earlier passages causing cycles, I used a Directed Graph to model the story. A Digraph consists of nodes (the story passages) and edges (the choices that lead you between those passages).
+
+[![Romeo and/or Juliet visualization]({{ site_url }}/img/raoj-graph.png)][vis]
 
 For passages, I recorded the passage number, a short description of the passage and also noted if it was an ending or not. For choices, I recorded the starting passage number, the destination passage number, a brief description of the passage and noted if the choice was indicated as part of the Bard Path in the book.
 
