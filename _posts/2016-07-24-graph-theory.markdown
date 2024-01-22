@@ -37,13 +37,13 @@ Initializing our empty [Digraph][digraph] is straightforward.
 
 [digraph]:https://en.wikipedia.org/wiki/Directed_graph
 
-```
+```python
 G = nx.DiGraph()
 ```
 
 For each of the passages, adding the graph node and its properties is easy as well.
 
-```
+```python
 G.add_node(passage,
         description=description,
         pov=pov,
@@ -53,7 +53,7 @@ G.add_node(passage,
 
 Adding the choice data for building the graph edges is simple too.
 
-```
+```python
 G.add_edge(from_passage, to_passage,
             description=description,
             bard_choice=bard_choice,
@@ -64,7 +64,7 @@ The code to export the finished graph as [JSON formatted node link data][node-li
 
 [node-link]: https://networkx.github.io/documentation/networkx-1.10/reference/readwrite.json_graph.html
 
-```
+```python
 d = json_graph.node_link_data(self.G)
 json.dump(d, open(json_file, 'w'))
 ```
@@ -81,7 +81,7 @@ The Networkx library also makes it very easy to calculate classic [graph algorit
 
 By calculating the unweighted shortest path for each node, starting from the Cover of the story, we can easily add the shortest path length and shortest path passages visited to our graph node properties.
 
-```
+```python
 def add_shortest_path(self, start='Cover'):
     # calculate min_depth from shortest path from 'Cover'
     spl = nx.shortest_path_length(self.G, start)
@@ -93,7 +93,7 @@ def add_shortest_path(self, start='Cover'):
 
 This allows us to quickly do queries such as `raoj.G.node['THE END FOR REAL THIS TIME']['from_cover_path']` to find that least number of decisions to get from the Cover to the true ending of the story is 49 passages, quite a bit shorter than the 85 steps needed to follow the full bard path.
 
-```
+```python
 ['Cover', '1', '36', '4', '5', '6', '7', '8', '9', '10', '25', '33', '58', '74', '96', '111', '120', '148', '167', '110', '142', '170', '158', '178', '149', '156', '199', '193', '216', '209', '191', '201', '189', '210', '221', '229', '258', '358', '365', '292', '332', '314', '329', '347', '355', '381', '425', '414', '434', '461', 'THE END FOR REAL THIS TIME']
 ```
 
@@ -103,7 +103,7 @@ The last fun property that I played with adding was the "laziest path" a weighte
 
 We define the weight before adding the edge (choice) data.
 
-```
+```python
 try:
     weight = abs(int(from_passage) - int(to_passage))
 except:
@@ -112,13 +112,13 @@ except:
 
 Adding the shortest weighted path is basically the same as the previous code but we are using Dijkstra's algorithm instead the unweighted shortest path.
 
-```
+```python
   spl = nx.dijkstra_path(self.G, start, end)
 ```
 
 We can query our results in the same manner as we saw earlier. This path is a little bit longer than our shortest path with 51 passages read, but with 888 passages turned over it is considerably more lazy than the 1010 passages turned over in the unweighted shortest path.
 
-```
+```python
 ['Cover', '1', '36', '4', '5', '6', '7', '8', '9', '10', '25', '33', '58', '74', '96', '111', '120', '154', '144', '159', '139', '163', '122', '169', '143', '160', '172', '184', '193', '216', '209', '191', '201', '189', '210', '221', '229', '245', '268', '281', '311', '292', '332', '314', '329', '347', '355', '381', '425', '414', '434', '461', 'THE END FOR REAL THIS TIME']
 ```
 

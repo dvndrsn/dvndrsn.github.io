@@ -31,7 +31,7 @@ The visualization was created using HTML, CSS, SVG and JavaScript D3.JS libary. 
 
 First we set the force simulation layout and parameters. A negative charge provides a repulsive force between each of the nodes while gravity pulls nodes to the center of the diagram. In addition to this, there is a force applied on the node links with the default settings.
 
-```
+```javascript
 var force = d3.layout.force()
         .charge(-50)
         .gravity(.175)
@@ -40,7 +40,7 @@ var force = d3.layout.force()
 
 After loading the JSON data, the graph node and link data are provided to the force simulation, which will update the x and y positions of the nodes and links based upon the forces defined earlier.
 
-```
+```javascript
 force
     .nodes(graph.nodes)
     .links(graph.links)
@@ -49,7 +49,7 @@ force
 
 Using D3 we bind node data to SVG Circle elements, varying color by the passage's POV Character and size by passage type. For user interaction with SVG element, force.drag is called.
 
-```
+```javascript
 var node = container.selectAll(".node")
         .data(graph.nodes)
         .enter().append("circle")
@@ -71,7 +71,7 @@ Edge data is bound separately to SVG Path with a Marker arrowhead (not shown).
 
 A function is bound to the force simulation tick event which updates the node and path positions per the latest data from the force simulation.
 
-```
+```javascript
 force.on("tick", function() {
     path.attr("d", function(d) {
         return "M" +
@@ -97,7 +97,7 @@ Once the force layout is configured, the data will be displayed as a tangled blo
 
 To try to make the structure of the narrative more clear, I decided to organize the graph nodes based on the order of passages visited while following the bard path. The bard path consists of red-highlighted choices that follow Shakespeare's original version of the Romeo and Juliet story. I traversed the bard path using depth first search during pre-processing in Python and calculated a fixed layout for the bard path nodes. Nodes with fixed layout will not be subject to simulation forces. In order to add more flexibility to the layout, I only marked every 3 nodes as a fixed.
 
-```
+```python
 def add_bard_layout(self, layout, fixed_node=3, start='Cover',
                     end='THE END FOR REAL THIS TIME'):
     e, length = start, 0

@@ -8,7 +8,7 @@ tags:     projects
 project:  "Romeo and/or Juliet and/or Graph Theory"
 ---
 
-This is the second part of a series of psots about some of the technical details about how I put together [a visualization of passages and choices][vis] in [Ryan North][ryno]'s excellent choosable path adventure, [Romeo and/or Juliet][roaj]. Here, we talk about designing the schema for the directed graph, gathering data, and some Sheets formulas use to help automate some mundane tasks.
+This is the second part of a series of psots about some of the technical details about how I put together [a visualization of passages and choices][vis] in [Ryan North][ryno]'s excellent choosable path adventure, [Romeo and/or Juliet][raoj]. Here, we talk about designing the schema for the directed graph, gathering data, and some Sheets formulas use to help automate some mundane tasks.
 
 [vis]: /projects/raoj-graph/
 [ryno]: https://twitter.com/ryanqnorth
